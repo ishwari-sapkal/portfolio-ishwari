@@ -1,16 +1,54 @@
-# React + Vite
+# Ishwari Sapkal – Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## About the Project
 
-Currently, two official plugins are available:
+This portfolio website serves as a professional digital portfolio showcasing my academic background, technical expertise, projects, research contributions, certifications, and achievements. The platform is designed to provide visitors with a comprehensive overview of my skills, experience, and work in software and application development.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Key Features
 
-## React Compiler
+* Modern and responsive user interface
+* Professional profile and career overview
+* Education and academic achievements
+* Technical skills and technology stack
+* Project portfolio with detailed descriptions
+* Research publications and achievements
+* Certifications and professional training
+* Contact and social media integration
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Technology Stack
 
-## Expanding the ESLint configuration
+* React.js
+* Vite
+* JavaScript (ES6+)
+* HTML5
+* CSS3
+* Bootstrap
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Featured Projects
+
+### Hostel Room Allocation System
+
+A comprehensive hostel management solution designed to automate student registration, document verification, room allocation, complaint handling, and administrative operations.
+
+### Quantum Secure Digital Voting System
+
+A secure web-based voting platform developed using Flask and MongoDB, incorporating advanced security measures to ensure transparency, integrity, and reliability in the voting process.
+
+## Research Publication
+
+**Human-Trust-Aware Blockchain System for Preventing Silent Data Manipulation in Digital Governance Platforms**
+
+Published in the International Research Journal of Modernization in Engineering Technology and Science (IRJMETS), focusing on blockchain-enabled trust mechanisms for secure digital governance systems.
+
+## Objective
+
+To present my professional profile, technical capabilities, research interests, and project experience through an accessible and visually engaging platform.
+
+## Author
+
+**Ishwari Sapkal**
+Computer Engineering Graduate | Full Stack Developer | Android Developer | AI Business Analyst Trainee
+
+## Contact
+
+For professional opportunities, collaborations, or project discussions, please connect through the contact information provided on the portfolio website.
