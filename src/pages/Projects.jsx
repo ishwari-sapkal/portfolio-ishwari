@@ -6,6 +6,7 @@ import HostelImg from "../assets/hostel.png";
 import VotingImg from "../assets/voting.png";
 import SweetDeliveryImg from "../assets/sweetdelivery.jpeg";
 import SweetVideo from "../assets/sweet-delivery-demo.mp4";
+import ResumeBuilderImg from "../assets/resume-builder.png";
 
 import {
   FaGithub,
@@ -21,6 +22,7 @@ function ProjectCard({
   video,
   college,
   github,
+  live,
   shortDesc,
   overview,
   modules,
@@ -122,6 +124,26 @@ function ProjectCard({
               GitHub Repository
             </a>
 
+            {live && (
+              <a
+                href={live}
+                target="_blank"
+                rel="noreferrer"
+                className="
+                  px-5
+                  py-3
+                  rounded-xl
+                  bg-orange-500/15
+                  border
+                  border-orange-500/40
+                  hover:bg-orange-500/25
+                  transition
+                "
+              >
+                Live Demo
+              </a>
+            )}
+
             <button
               onClick={() => setOpen(!open)}
               className="
@@ -163,48 +185,48 @@ function ProjectCard({
             {overview}
           </p>
 
-         <div className="grid lg:grid-cols-2 gap-8 mb-8">
+          <div className="grid lg:grid-cols-2 gap-8 mb-8">
 
-  {/* MODULES */}
+            {/* MODULES */}
 
-  <div>
-    <h3 className="text-xl font-semibold text-orange-400 mb-3">
-      Modules Used
-    </h3>
+            <div>
+              <h3 className="text-xl font-semibold text-orange-400 mb-3">
+                Modules Used
+              </h3>
 
-    <ul className="list-disc pl-5 text-gray-300 space-y-2">
-      {modules.map((item) => (
-        <li key={item}>{item}</li>
-      ))}
-    </ul>
-  </div>
+              <ul className="list-disc pl-5 text-gray-300 space-y-2">
+                {modules.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </div>
 
-  {/* VIDEO */}
+            {/* VIDEO */}
 
-  {video && (
-    <div>
-      <h3 className="text-xl font-semibold text-orange-400 mb-3">
-        Project Demonstration
-      </h3>
+            {video && (
+              <div>
+                <h3 className="text-xl font-semibold text-orange-400 mb-3">
+                  Project Demonstration
+                </h3>
 
-      <video
-        controls
-        preload="metadata"
-        className="
-          w-[450px]
-          h-[600px]
-          rounded-2xl
-          border
-          border-orange-500/30
-          shadow-[0_0_20px_rgba(255,140,26,0.15)]
-        "
-      >
-        <source src={video} type="video/mp4" />
-      </video>
-    </div>
-  )}
+                <video
+                  controls
+                  preload="metadata"
+                  className="
+                    w-[450px]
+                    h-[600px]
+                    rounded-2xl
+                    border
+                    border-orange-500/30
+                    shadow-[0_0_20px_rgba(255,140,26,0.15)]
+                  "
+                >
+                  <source src={video} type="video/mp4" />
+                </video>
+              </div>
+            )}
 
-</div>
+          </div>
 
           <h3 className="text-xl font-semibold text-orange-400 mb-3">
             Working
@@ -234,13 +256,13 @@ function ProjectCard({
             {outcome}
           </p>
 
-          
         </div>
       )}
 
     </div>
   );
 }
+
 export default function Projects() {
   return (
     <>
@@ -257,6 +279,7 @@ export default function Projects() {
           </h1>
 
           <ul className="hidden md:flex gap-10 text-gray-300 font-medium">
+
             <li className="hover:text-orange-400 transition-all duration-300">
               <Link to="/">Home</Link>
             </li>
@@ -268,9 +291,11 @@ export default function Projects() {
             <li className="hover:text-orange-400 transition-all duration-300">
               <Link to="/contact">Contact</Link>
             </li>
+
           </ul>
 
           <div className="flex gap-6 text-2xl">
+
             <a
               href="https://github.com/ishwari-sapkal?tab=repositories"
               target="_blank"
@@ -295,7 +320,9 @@ export default function Projects() {
             >
               <FaEnvelope />
             </a>
+
           </div>
+
         </nav>
 
         {/* PAGE TITLE */}
@@ -463,6 +490,77 @@ export default function Projects() {
             ]}
 
             outcome="Successfully developed a full-stack e-commerce style sweet delivery platform that streamlines online ordering, delivery tracking and customer management."
+          />
+
+          {/* PROJECT 4 */}
+
+          <ProjectCard
+            image={ResumeBuilderImg}
+            title="ResumeAI - Resume Builder"
+            college="Personal Full Stack Development Project"
+            github="https://github.com/ishwari-sapkal/ResumeAI"
+            live="https://resume-hvpwdcq3g-ishwari-projects.vercel.app/"
+
+            shortDesc="A dynamic full-stack resume builder that allows users to create, customize, preview and manage professional resumes through an intuitive web interface with multiple resume templates."
+
+            overview="ResumeAI is a full-stack resume building platform developed to simplify the process of creating professional resumes. Users can register and log in, enter their personal and professional information, select from multiple resume templates and generate a structured resume preview. The platform also provides a dashboard and My Resume section for managing created resumes."
+
+            modules={[
+              "User Registration & Login",
+              "Authentication System",
+              "User Dashboard",
+              "Profile Management",
+              "Resume Template Selection",
+              "Resume Builder",
+              "Personal Information Management",
+              "Education Management",
+              "Experience Management",
+              "Skills Management",
+              "Projects & Certificates",
+              "Professional Resume Template",
+              "Modern Resume Template",
+              "Creative Resume Template",
+              "Resume Preview",
+              "My Resume Management",
+              "Resume Download",
+            ]}
+
+            working={[
+              "Users register and log in to the ResumeAI platform.",
+              "Users access their personalized dashboard.",
+              "Users select a preferred resume template.",
+              "Users enter personal, education, experience, skills and project information.",
+              "Resume data is submitted to the Flask backend.",
+              "The backend processes and stores resume information in MongoDB.",
+              "The selected template dynamically generates the resume preview.",
+              "Users can view and manage their saved resumes.",
+              "Users can preview and download their generated resume.",
+            ]}
+
+            tech={[
+              "Python",
+              "Flask",
+              "MongoDB",
+              "HTML",
+              "CSS",
+              "JavaScript",
+            ]}
+
+            contribution={[
+              "Complete Frontend Development",
+              "Flask Backend Development",
+              "MongoDB Database Design",
+              "User Authentication System",
+              "Dashboard Development",
+              "Resume Builder Form Development",
+              "Dynamic Resume Preview",
+              "Multiple Resume Template Implementation",
+              "Resume Data Management",
+              "My Resume Functionality",
+              "Testing and UI Optimization",
+            ]}
+
+            outcome="Successfully developed and deployed a full-stack resume builder that provides users with an easy way to create, preview and manage professional resumes using multiple customizable templates."
           />
 
         </div>

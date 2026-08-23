@@ -528,12 +528,12 @@ export default function Portfolio() {
                     },
 
                     {
-                      title:
-                        "Future Goal",
-                      year: "Software Engineer",
-                      desc:
-                        "Focused on building scalable and impactful software solutions."
-                    },
+  title:
+    "Prof. Ram Meghe Institute of Technology and Research, Badnera",
+  year: "B.E. in Computer Science & Engineering",
+  desc:
+    "Currently pursuing B.E. in Computer Science & Engineering, building strong technical skills and developing innovative software solutions."
+},
 
                   ].map((item) => (
 
